@@ -1,25 +1,107 @@
 <DOCTYPE html>
     <html lang="fr">
-    <head>
-    <meta charset="UTF-8">
-    <title>Ohmyfood</title>
-
-    <!-- Lien pour utiliser Font Awesome -->
-    <script src="https://kit.fontawesome.com/bf0be1fa79.js" crossorigin="anonymous"></script> 
-    
-    </head>
+        <head>
+            <meta charset="UTF-8">
+            <title>A la française</title>
+        
+            <!-- Viewport-->
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+             <!-- Lien pour utiliser Font Awesome -->
+             <script src="https://kit.fontawesome.com/bf0be1fa79.js" crossorigin="anonymous"></script> 
+        </head>
 
     <body>
+    <!-- HEADER -->
     <header>
-
+        <nav>
+            <div class="logo-return">
+               <a href="#"> <i class="fa-solid fa-arrow-left header__navbar__back"></i> </a>
+                <img src="../images/logo/ohmyfood@2x.svg" alt="logo ohmyfood" >
+            </div>
+            <div class="header-img">
+                <img src="../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Photo Restaurant A la française">
+            </div>
+        </nav>
     </header>
-    <main>
-        <section>
-            
+
+    <main class="main-container">
+        <h1>A la française</h1>
+        <section class="entrance">
+            <h2 class="section-title">ENTREES</h2>
+            <article class="card-dishes">
+                <h3>Tartare de poulpe acidulé</h3>
+                <p>Aux zestes d'orange</p>
+                <p>25€</p>
+            </article>
+            <article class="card-dishes">
+                <h3>Velouté de légumes d'antan</h3>
+                <p>Carotte, panais, topinambour</p>
+                <p>35€</p>
+            </article>
+            <article class="card-dishes">
+                <h3>Soupe à l'oignon</h3>
+                <p>Revisitée</p>
+                <p>20€</p>
+            </article>    
+        </section>
+        <section class="main-dishes">
+            <h2 class="section-title">PLATS</h2>
+            <article class="card-dishes">
+                <h3>Coquilles Saint-Jacques</h3>
+                <p>Accompagnées d'une purée de panais</p>
+                <p>40€</p>
+            </article>
+            <article class="card-dishes">
+                <h3>Magret de canard</h3>
+                <p>Et parmentier de pommes de terre</p>
+                <p>35€</p>
+            </article>
+            <article class="card-dishes">
+                <h3>Pigeonneau d’Ille-et-Vilaine</h3>
+                <p>Sur son lit de gnocchis aux légumes</p>
+                <p>44€</p>
+            </article>      
+        </section>
+        <section class="desserts">
+            <h2 class="section-title">DESSERTS</h2>
+            <article class="card-dishes">
+                <h3>Pétales de violettes glacés</h3>
+                <p>Et purée de noisettes</p>
+                <p>18€</p>
+            </article>
+            <article class="card-dishes">
+                <h3>Fondant au chocolat</h3>
+                <p>Revisité</p>
+                <p>22€</p>
+            </article>
+            <article class="card-dishes">
+                <h3>Millefeuille croustillant</h3>
+                <p>Myrtilles et pâte d’amande</p>
+                <p>23€</p>
+            </article>      
+        </section>
+        <section class="order">
+            <button class="button-order">
+                <a href="#">Commander</a>
+            </button>
         </section>
     </main>
     <footer>
-
+        <div class="footer-logo">
+            <img src="../images/logo/ohmyfood@2x.svg" alt="logo ohmyfood" >
+        </div>
+        <div>
+            <i class="fa-solid fa-utensils"></i>
+            <a href="#">Proposer un restaurant</a> 
+        </div> 
+        <div>
+            <i class="fa-solid fa-handshake-angle"></i>
+            <a href="#">Devenir partenaire</a>  
+        </div>
+            <a href="#">Mention légales</a>
+            <a href="#">Contact</a>  
+        </div>
     </footer>
     </body>
     </html>
