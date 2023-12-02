@@ -1,23 +1,107 @@
 <DOCTYPE html>
     <html lang="fr">
-    <head>
-    <meta charset="UTF-8">
-    <title>Ohmyfood</title>
-
-     <!-- Lien pour utiliser Font Awesome -->
-     <script src="https://kit.fontawesome.com/bf0be1fa79.js" crossorigin="anonymous"></script> 
-    </head>
+        <head>
+            <meta charset="UTF-8">
+            <title>La palette du goût</title>
+        
+            <!-- Viewport-->
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+             <!-- Lien pour utiliser Font Awesome -->
+             <script src="https://kit.fontawesome.com/bf0be1fa79.js" crossorigin="anonymous"></script> 
+        </head>
 
     <body>
+    <!-- HEADER -->
     <header>
-
+        <nav>
+            <div class="logo-return">
+               <a href="#"> <i class="fa-solid fa-arrow-left header__navbar__back"></i> </a>
+                <img src="../images/logo/ohmyfood@2x.svg" alt="logo ohmyfood" >
+            </div>
+            <div class="header-img">
+                <img src="../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Photo Restaurant La palette du goût">
+            </div>
+        </nav>
     </header>
-    <main>
-        <section>
-            
+
+    <main class="main-container">
+        <h1>La palette du goût</h1>
+        <section class="entrance">
+            <h2 class="section-title">ENTREES</h2>
+            <article class="card-dishes">
+                <h3>Fricassée d'escargots</h3>
+                <p>Au piment d'Espelette</p>
+                <p>25€</p>
+            </article>
+            <article class="card-dishes">
+                <h3>Foie gras de canard mi-cuit</h3>
+                <p>Et ses copeaux de truffe noire</p>
+                <p>35€</p>
+            </article>
+            <article class="card-dishes">
+                <h3>Œuf au plat</h3>
+                <p>Assaisonné à la truffe sur lit de caviar</p>
+                <p>20€</p>
+            </article>   
+        </section>
+        <section class="main-dishes">
+            <h2 class="section-title">PLATS</h2>
+            <article class="card-dishes">
+                <h3>Filet de bœuf aux herbes</h3>
+                <p>Accompagné de sa ribambelle de légumes</p>
+                <p>40€</p>
+            </article>
+            <article class="card-dishes">
+                <h3>Parmentier de queue de bœuf</h3>
+                <p>À la truffe noire sur sa purée de panais</p>
+                <p>35€</p>
+            </article>
+            <article class="card-dishes">
+                <h3>Filet de turbot</h3>
+                <p>Aux agrumes</p>
+                <p>44€</p>
+            </article>      
+        </section>
+        <section class="desserts">
+            <h2 class="section-title">DESSERTS</h2>
+            <article class="card-dishes">
+                <h3>Paris-Brest</h3>
+                <p>Revisité</p>
+                <p>18€</p>
+            </article>
+            <article class="card-dishes">
+                <h3>Macaron au chocolat d'exception </h3>
+                <p>Et glace à la vanille de Madagascar</p>
+                <p>22€</p>
+            </article>
+            <article class="card-dishes">
+                <h3>Mousse au chocolat </h3>
+                <p>Au piment d'Espelette et à la truffe noire</p>
+                <p>23€</p>
+            </article>      
+        </section>
+        <section class="order">
+            <button class="button-order">
+                <a href="#">Commander</a>
+            </button>
         </section>
     </main>
     <footer>
+        <div class="footer-logo">
+            <img src="../images/logo/ohmyfood@2x.svg" alt="logo ohmyfood" >
+        </div>
+        <div>
+            <i class="fa-solid fa-utensils"></i>
+            <a href="#">Proposer un restaurant</a> 
+        </div> 
+        <div>
+            <i class="fa-solid fa-handshake-angle"></i>
+            <a href="#">Devenir partenaire</a>  
+        </div>
+            <a href="#">Mention légales</a>
+            <a href="#">Contact</a>  
+        </div>
 
     </footer>
     </body>
