@@ -1,0 +1,27 @@
+.footer {
+    background-color: #353535;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 22px 25px 22px 25px;
+    margin-top: 60px;
+    height: auto;
+    &__ul {
+        list-style : none;
+        display: flex;
+        flex-direction: column;
+        font-family: "Roboto-light";
+        padding: 0;
+        gap: 8px;
+    }
+    
+    h3 {
+        color: #FFF;
+        font-family: "Shrikhand", cursive;
+        font-size: 18px;
+        margin: 0;
+      }
+ 
+     
+    
+}
