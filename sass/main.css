@@ -28,11 +28,21 @@ a {
   padding: 0;
   gap: 8px;
 }
-.footer h3 {
-  color: #FFF;
+.footer__title {
   font-family: "Shrikhand", cursive;
   font-size: 18px;
   margin: 0;
+  padding-bottom: 10px;
+}
+.footer__ul li {
+  padding-bottom: 5px;
+}
+.footer__ul i {
+  padding-right: 5px;
+}
+.footer__ul__link {
+  color: white;
+  font-size: 18px;
 }
 
 header {

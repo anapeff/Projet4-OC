@@ -15,12 +15,30 @@
         gap: 8px;
     }
     
-    h3 {
-        color: #FFF;
-        font-family: "Shrikhand", cursive;
+    &__title  {
+        
+        font-family: "Shrikhand",cursive;
         font-size: 18px;
         margin: 0;
+        padding-bottom: 10px;
       }
+      &__ul li {
+        
+        padding-bottom: 5px;
+        
+
+      }
+      &__ul i {
+        
+        padding-right: 5px;
+
+      }
+
+      &__ul__link {
+        color: white;
+        font-size: 18px;
+      }
+  
  
      
     
