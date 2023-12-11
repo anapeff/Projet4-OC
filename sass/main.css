@@ -1,9 +1,9 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 * {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
 }
 
 a {
@@ -53,7 +53,92 @@ header img {
   height: auto;
 }
 
-.localisation {
+.location {
   width: 100%;
   height: 50px;
+}
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.introduction__title {
+  text-align: center;
+  margin: 10px;
+}
+.introduction__text {
+  font-size: 18px;
+  text-align: center;
+  margin: 21px 0 0 0;
+  padding: 2px;
+}
+.introduction a {
+  display: inline-block;
+  margin: 31px 0px 57px 0px;
+}
+
+.functioning__title {
+  padding-left: 20px;
+}
+.functioning__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.functioning__list__item {
+  max-width: 280px;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.restaurants {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+}
+.restaurants__title {
+  padding: 40px 0px 20px 20px;
+}
+.restaurants__list {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 15px; /* Espace entre les cartes hébergments */
+  margin: 17px;
+}
+.restaurants__card {
+  background-color: white;
+  border-radius: 20px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+.restaurants__card img {
+  width: 100%;
+  height: 148px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.restaurants__card__infos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+}
+.restaurants__card__infos__column1 {
+  padding-left: 15px;
+}
+.restaurants__card__infos__column1 h3 {
+  margin-top: 10px;
+}
+.restaurants__card__infos__column1 p {
+  margin-bottom: 12px;
+}
+.restaurants__card__infos__column2 {
+  margin-left: 150px;
+  align-items: center;
+  margin-top: 15px;
 }/*# sourceMappingURL=main.css.map */
