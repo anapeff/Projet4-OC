@@ -27,83 +27,93 @@
     <main>
         <!-- INTRODUCTION -->
         <section class="introduction">
-            <h1>Réservez le menu qui vous convient</h1>
-            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-            <button>Explorer nos restaurants</button>
+            <h1 class="introduction__title">Réservez le menu qui vous convient</h1>
+            <p class="introduction__text">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+            <div>
+            <a class="btn" href="#">Explorer nos restaurants</a>
+            </div>
         </section>
+          
         <!-- FONCTIONNEMENT -->
         <section class="functioning">
             <h2>Fonctionnement</h2>
-            <div class="card-function">
-                <article>
-                    <span>1</span>
+            <div class="functioning__list">
+                <article class="functioning__list__item">
+                    <div class="item__number">1</div>
                     <i class="fa-solid fa-mobile-screen-button"></i>
                     <p>Choisissez un restaurant</p>
                 </article>
-                <article>
-                    <span>2</span>
+                <article class="functioning__list__item">
+                    <div class="item__number">2</div>
                     <i class="fa-solid fa-list-ul"></i>
-                    <p>Composez votre menu</p>
+                    <p class="item__text">Composez votre menu</p>
                 </article>
-                <article>
-                    <span>3</span>
+                <article class="functioning__list__item">
+                    <div class="item__number">3</div>
                     <i class="fa-solid fa-store"></i>
-                    <p>Dégustez votre menu</p>
+                    <p class="item__text">Dégustez votre menu</p>
                 </article>
             </div>
         </section>
         <!-- RESTAURANTS -->
+        
         <section class="restaurants">
-           <div class="card-restaurants">
-            <article class="card">
-                <div class="card-img"> 
-                    <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg">
-                </div>
-                <div class="card-infos">
-                    <h3>La palette du goût</h3>
-                    <p>Ménilmontant</p>
-                </div>
-                <div class="card-icon">
-                     <i class="fa-regular fa-heart"></i>
-                </div>
-            </article>
-            <article class="card">
-                <div class="card-img"> 
+            <h2>Restaurants</h2>
+           
+            <div class="restaurants__list">
+                <a href="#">
+                    <article class="restaurants__card">
+                       
+                            <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg">
+                      
+                        <div class="restaurants__card__infos">
+                            <h3>La palette du goût</h3>
+                            <p>Ménilmontant</p>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                         
+                    </article>
+                </a>
+                <a href="#">
+            <article class="restaurants__card">
+               
                     <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg">
-                <div class="card-infos">
+                <div class="restaurants__card__infos">
                     <p>Charonnet</p>
                     <h3>La note enchantée</h3>
-                </div>
-                <div class="card-icon">
                     <i class="fa-regular fa-heart"></i>
+             
+                   
                 </div>
             </article>
-            <article class="card">
-                <div class="card-img"> 
+            </a>
+            <a href="#">
+            <article class="restaurants__card">
+               
                     <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg">
-                </div>
-                <div class="card-infos">
+           
+                <div class="restaurants__card__infos">
                     <h3>A la française</h3>
                     <p>Cité Rouge</p>
-                </div>
-                <div class="card-icon">
                     <i class="fa-regular fa-heart"></i>
                 </div>
             </article>
-            <article class="card">
-                <div class="card-img"> 
+        </a>
+        <a href="#">
+            <article class="restaurants__card">
+               
                     <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg">
-                </div>
-                    <div class="card-infos">
+            
+                <div class="restaurants__card__infos">
                     <h3>Le délice des sens</h3>
-                <p>Folis-Méricour</p>
-                </div>
-                <div class="card-icon">
+                    <p>Folis-Méricour</p>
                     <i class="fa-regular fa-heart"></i>
                 </div>
             </article>
+        </a>
            </div>
         </section>
+    
     </main>
     <!-- FOOTER -->
     <footer class="footer">
