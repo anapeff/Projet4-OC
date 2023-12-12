@@ -113,12 +113,18 @@ i {
 
   }
 
-    &__card img {
-
-    width: 100%;
+  &__card__image {
     height: 148px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    overflow: hidden;
+
+  }
+
+    &__card img {
+
+    width: 100%;
+    
   }
   
     &__card__infos {
