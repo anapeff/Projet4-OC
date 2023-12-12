@@ -11,7 +11,14 @@ a {
   color: black;
 }
 
-.btn {
+.button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.button__btn {
   display: inline-block;
   padding: 15px 30px;
   font-size: 18px; /* Ajustez la taille de la police selon vos besoins */
@@ -19,6 +26,7 @@ a {
   color: #fff; /* Couleur du texte */
   text-decoration: none;
   border-radius: 30px;
+  box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
 }
 
 .footer {
@@ -72,6 +80,10 @@ header .logo {
   justify-content: center;
   align-items: center;
 }
+header i {
+  margin-right: 15px;
+  margin-left: -70px;
+}
 header img {
   width: 162px; /* Reduire taille logo */
   height: auto;
@@ -83,6 +95,9 @@ header img {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.location i {
+  margin-right: 15px;
 }
 
 .introduction {
@@ -210,6 +225,9 @@ header img {
   margin: 32px 0px 20px 15px;
   font-weight: 400;
 }
+.menu i {
+  margin-left: 18px;
+}
 .menu h2 {
   padding: 20px 0px 20px 13px;
 }
@@ -231,12 +249,4 @@ header img {
 }
 .menu__list__name__column2 {
   margin-right: 36px;
-}
-
-.order {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
 }/*# sourceMappingURL=main.css.map */

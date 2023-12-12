@@ -16,10 +16,13 @@ header {
         justify-content: center;
         align-items: center;
         
-        
-
     }
-        img {
+
+    i {
+        margin-right: 15px;
+        margin-left: -70px;
+    }
+    img {
             width: 162px;  /* Reduire taille logo */
             height: auto;
         }
