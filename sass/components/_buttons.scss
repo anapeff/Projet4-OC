@@ -9,16 +9,24 @@
     &__btn {
         display: inline-block;
         padding: 15px 30px; 
-        font-size: 18px; /* Ajustez la taille de la police selon vos besoins */
-        background-color: rgb(191, 50, 50);
-        color: #fff; /* Couleur du texte */
+        font-size: 18px; 
+        background: linear-gradient($purple,$pink);
+        color: #fff; 
         text-decoration: none; 
         border-radius: 30px; 
         box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.10);
+        cursor: pointer;
+        &:hover,
+        &:active{
+            opacity:0.7;
+            @include box-shadow;
+             }
+        }
+    
 
     }
 
-}
+
 
 
 

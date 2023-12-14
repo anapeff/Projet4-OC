@@ -21,12 +21,17 @@ a {
 .button__btn {
   display: inline-block;
   padding: 15px 30px;
-  font-size: 18px; /* Ajustez la taille de la police selon vos besoins */
-  background-color: rgb(191, 50, 50);
-  color: #fff; /* Couleur du texte */
+  font-size: 18px;
+  background: linear-gradient(#9356DC, #FF79DA);
+  color: #fff;
   text-decoration: none;
   border-radius: 30px;
   box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.button__btn:hover, .button__btn:active {
+  opacity: 0.7;
+  box-shadow: 2px 6px 19px -7px rgba(0, 0, 0, 0.31);
 }
 
 .footer {
@@ -85,11 +90,15 @@ header img {
   width: 100%;
   height: 50px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  border-top: 1px lightgrey solid;
+  background-color: rgb(234, 234, 234);
+  justify-content: center;
+  padding-top: 5px;
 }
 .location i {
   margin-right: 15px;
+  margin-left: 10px;
 }
 
 .introduction {
@@ -154,7 +163,7 @@ header img {
   width: 100%;
   height: auto;
   box-sizing: border-box;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
 }
 .restaurants__title {
   padding: 40px 0px 20px 20px;
@@ -166,7 +175,7 @@ header img {
   margin: 17px;
 }
 .restaurants__card {
-  background-color: white;
+  background-color: #ffffff;
   border-radius: 20px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
@@ -209,7 +218,7 @@ header img {
 .menu {
   box-sizing: border-box;
   border-radius: 35px;
-  background-color: #f2f2f2;
+  background-color: #f6f6f6;
   position: relative;
   bottom: 58px;
 }
@@ -224,13 +233,14 @@ header img {
 }
 .menu h2 {
   padding: 20px 0px 20px 13px;
+  font-family: "Roboto";
 }
 .menu__list__name {
   height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: #ffffff;
   border-radius: 15px;
   box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
   margin: 10px;
