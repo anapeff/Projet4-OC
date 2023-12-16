@@ -128,7 +128,7 @@ i {
 
 .restaurants {
   width: 100%;
-  height: auto;
+  
   box-sizing: border-box;
   background-color: #f2f2f2;
   margin-top: 25px;
@@ -148,8 +148,9 @@ i {
     &__list {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 60px;
     gap: 15px; /* Espace entre les cartes */
-    margin: 17px;
+    margin: 17px 17px 0px 17px;
     @media screen and (min-width:1024px) {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -190,7 +191,7 @@ i {
   }
     &__card__infos__column1 {
       padding-left: 15px;
-    
+  
   }
 
     &__card__infos__column1 h3
@@ -204,7 +205,7 @@ i {
 
   }
     &__card__infos__column2 {
-    margin-left: 150px;
+    margin-left: 120px;
     align-items: center;
     margin-top: 15px;
   }

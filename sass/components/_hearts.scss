@@ -1,0 +1,59 @@
+
+
+.restaurants__card__infos__column2 {
+
+   
+
+    i {
+        position: absolute;
+        bottom: 30px;
+        right: 25px;
+        font-size: 25px;
+        cursor: pointer;
+
+
+    }
+
+    .my-heart-full {
+        transition-property: all;
+        transition-duration: 500ms;
+        opacity: 0;
+    }
+
+
+    .my-heart-full:hover {
+        opacity: 1;
+        color: transparent;
+        background-image: linear-gradient($purple, $pink);
+        background-clip: text;
+    }
+}
+
+.like {
+
+    i {
+        position: absolute;
+        
+        right: 25px;
+        font-size: 30px;
+        cursor: pointer;
+
+
+    }
+
+    .my-heart-full {
+        opacity: 0;
+        transition-property: all;
+        transition-duration: 500ms;
+
+    }
+
+    .my-heart-full:hover {
+        opacity: 1;
+        color: transparent;
+        background-image: linear-gradient($purple, $pink);
+        background-clip: text;
+        
+    }
+}
+
