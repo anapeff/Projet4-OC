@@ -86,7 +86,6 @@ a {
 }
 .menu__list__name__column1 p {
   white-space: nowrap;
-  overflow: hidden;
   text-overflow: ellipsis;
 }
 .menu__list__name:hover {
@@ -94,13 +93,15 @@ a {
 }
 .menu__list__name:hover .card__click {
   background-color: #99E2D0;
-  width: 100%;
+  width: 13%;
   opacity: 1;
 }
 .menu__list__name:hover .card__click i {
-  transform: rotate(359deg);
   color: #ffffff;
   transition: 0.5s ease-in-out;
+}
+.menu__list__name:hover .menu__list__name__column2 {
+  width: 13%;
 }
 
 .card__click {
@@ -121,8 +122,6 @@ a {
 }
 .card__click i {
   display: inline-block;
-  transition: 0.5s ease-in-out;
-  transform: rotate(0deg);
   color: #ffffff;
 }
 
@@ -436,4 +435,7 @@ header img {
 }
 .menu__list__name__column2 {
   margin-right: 36px;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 14px;
 }/*# sourceMappingURL=main.css.map */
