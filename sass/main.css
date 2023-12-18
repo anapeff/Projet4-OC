@@ -72,6 +72,29 @@ a {
           background-clip: text;
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#animation1,
+#animation2,
+#animation3 {
+  opacity: 0;
+  animation: fadeIn 1500ms forwards;
+}
+
+#animation2 {
+  animation-delay: 2s;
+}
+
+#animation3 {
+  animation-delay: 3s;
+}
+
 .menu__list__name {
   transition: padding-right 0.25s ease-in-out;
   position: relative;
@@ -335,7 +358,6 @@ header img {
   .restaurants__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 50px; /* Espace entre les cartes */
   }
 }
 .restaurants__card {
@@ -387,7 +409,7 @@ header img {
   position: relative;
   margin-top: -62px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1200px) {
   .menu {
     margin-right: 192px;
     margin-left: 192px;

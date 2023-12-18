@@ -1,0 +1,23 @@
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  #animation1,
+  #animation2,
+  #animation3 {
+    opacity: 0;
+    animation: fadeIn 1500ms forwards;
+  }
+  
+  #animation2 {
+    animation-delay: 2s;
+  }
+  
+  #animation3 {
+    animation-delay: 3s;
+  }

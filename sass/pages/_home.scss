@@ -152,9 +152,11 @@ i {
     gap: 15px; /* Espace entre les cartes */
     margin: 17px 17px 0px 17px;
     @media screen and (min-width:1024px) {
+      
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 50px; /* Espace entre les cartes */
+      
+      
     
   }
    
