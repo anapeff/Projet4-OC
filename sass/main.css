@@ -72,6 +72,60 @@ a {
           background-clip: text;
 }
 
+.menu__list__name {
+  transition: padding-right 0.25s ease-in-out;
+  position: relative;
+}
+.menu__list__name__column1 {
+  overflow: hidden;
+}
+.menu__list__name__column1 h3 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu__list__name__column1 p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu__list__name:hover {
+  padding-right: 30px;
+}
+.menu__list__name:hover .card__click {
+  background-color: #99E2D0;
+  width: 100%;
+  opacity: 1;
+}
+.menu__list__name:hover .card__click i {
+  transform: rotate(359deg);
+  color: #ffffff;
+  transition: 0.5s ease-in-out;
+}
+
+.card__click {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 20px;
+  width: 0;
+  height: 100%;
+  transition: 0.5s;
+  border-radius: 0 15px 15px 0;
+  background-color: #ffffff;
+  opacity: 0;
+}
+.card__click i {
+  display: inline-block;
+  transition: 0.5s ease-in-out;
+  transform: rotate(0deg);
+  color: #ffffff;
+}
+
 .footer {
   background-color: #353535;
   color: white;

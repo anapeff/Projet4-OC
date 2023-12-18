@@ -1,0 +1,65 @@
+.menu__list__name {
+   
+    transition: padding-right 0.25s ease-in-out; // Ajoutez la transition à cette propriété
+    position: relative;
+    &__column1 {
+        overflow: hidden;
+    }
+    &__column1 h3 {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+        &__column1 p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+  
+    &:hover {
+      padding-right: 30px;
+  
+      .card__click {
+        background-color: $lightgreen;
+        width: 100%;
+        opacity: 1;
+     
+  
+  
+        i {
+          transform: rotate(359deg);
+          color: $white;
+      
+        transition: 0.5s ease-in-out;
+
+      
+        }
+      }
+    }
+  }
+  
+  .card__click {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 20px;
+    width: 0;
+    height: 100%;
+    transition: 0.5s;
+    border-radius: 0 15px 15px 0;
+    background-color: $white;
+    opacity: 0;
+  
+    i {
+        display: inline-block;
+        transition: 0.5s ease-in-out;
+        transform: rotate(0deg);
+      color: $white;
+    }
+  }
