@@ -11,13 +11,16 @@
   #animation2,
   #animation3 {
     opacity: 0;
-    animation: fadeIn 1500ms forwards;
+    animation: fadeIn 800ms forwards;
   }
-  
-  #animation2 {
+  #animation1{
     animation-delay: 2s;
   }
   
-  #animation3 {
+  #animation2 {
     animation-delay: 3s;
+  }
+  
+  #animation3 {
+    animation-delay: 4s;
   }
