@@ -4,6 +4,7 @@
     position: relative;
     &__column1 {
         overflow: hidden;
+        text-overflow: ellipsis;
     }
     &__column1 h3 {
         white-space: nowrap;
@@ -13,6 +14,7 @@
         &__column1 p {
         white-space: nowrap;
         text-overflow: ellipsis;
+        overflow: hidden;
     }
 
   
@@ -21,7 +23,7 @@
   
       .card__click {
         background-color: $lightgreen;
-        width: 13%;
+        width: 80px;
         opacity: 1;
      
   
@@ -36,7 +38,7 @@
         }
       }
       .menu__list__name__column2 {
-        width: 13%; // pour que l'animation ne prenne pas toute la largeur de la carte 
+        width: 80px; // pour que l'animation ne prenne pas toute la largeur de la carte 
       }
     }
   }

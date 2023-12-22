@@ -1,3 +1,66 @@
+.loader-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: load 600ms 3s forwards ease-in-out, spin 3s forwards ease-in-out; 
+  
+  height: 100vh;
+  inset: 0; //  définir top right left bottom
+  z-index: 1;
+  
+  
+  .cook {
+  animation: spin 5s ease-in-out;
+  color: black;
+  font-size: 50px;
+  border-radius: 50%;
+  background:linear-gradient($purple,$pink);
+
+  
+  
+  
+  
+  }
+  
+  }
+  @keyframes load {
+    from {
+        transform: scale(1);
+        opacity: 1;
+       
+    }
+  
+    to {
+        transform: scale(0);
+        opacity: 0;
+       
+    }
+  }
+  
+  @keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+  
+    33% {
+        transform: rotate(360deg);
+    }
+    
+    66% {
+        transform: rotate(0deg);
+    }
+  
+    100% {
+        transform: rotate(360deg);
+    
+     
+    }
+  }
+
+
+// Menus animations
+
 @keyframes fadeIn {
     0% {
       opacity: 0;
@@ -14,13 +77,13 @@
     animation: fadeIn 800ms forwards;
   }
   #animation1{
-    animation-delay: 2s;
+    animation-delay: 0.5s;
   }
   
   #animation2 {
-    animation-delay: 3s;
+    animation-delay: 1s;
   }
   
   #animation3 {
-    animation-delay: 4s;
+    animation-delay: 1.5s;
   }

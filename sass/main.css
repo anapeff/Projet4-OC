@@ -10,6 +10,15 @@ a {
   color: black;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  max-width: 1444px;
+  margin: 0, auto;
+}
+
 .button {
   display: flex;
   justify-content: center;
@@ -72,6 +81,48 @@ a {
           background-clip: text;
 }
 
+.loader-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: load 600ms 3s forwards ease-in-out, spin 3s forwards ease-in-out;
+  height: 100vh;
+  inset: 0;
+  z-index: 1;
+}
+.loader-container .cook {
+  animation: spin 5s ease-in-out;
+  color: black;
+  font-size: 50px;
+  border-radius: 50%;
+  background: linear-gradient(#9356DC, #FF79DA);
+}
+
+@keyframes load {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  33% {
+    transform: rotate(360deg);
+  }
+  66% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -88,15 +139,15 @@ a {
 }
 
 #animation1 {
-  animation-delay: 2s;
+  animation-delay: 0.5s;
 }
 
 #animation2 {
-  animation-delay: 3s;
+  animation-delay: 1s;
 }
 
 #animation3 {
-  animation-delay: 4s;
+  animation-delay: 1.5s;
 }
 
 .menu__list__name {
@@ -105,6 +156,7 @@ a {
 }
 .menu__list__name__column1 {
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu__list__name__column1 h3 {
   white-space: nowrap;
@@ -114,13 +166,14 @@ a {
 .menu__list__name__column1 p {
   white-space: nowrap;
   text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu__list__name:hover {
   padding-right: 30px;
 }
 .menu__list__name:hover .card__click {
   background-color: #99E2D0;
-  width: 13%;
+  width: 80px;
   opacity: 1;
 }
 .menu__list__name:hover .card__click i {
@@ -128,7 +181,7 @@ a {
   transition: 0.5s ease-in-out;
 }
 .menu__list__name:hover .menu__list__name__column2 {
-  width: 13%;
+  width: 80px;
 }
 
 .card__click {
@@ -231,6 +284,11 @@ header i {
   margin-right: 15px;
   margin-left: -70px;
 }
+@media screen and (min-width: 1024px) {
+  header i {
+    margin-left: 0;
+  }
+}
 header img {
   width: 162px; /* Reduire taille logo */
   height: auto;
@@ -250,7 +308,6 @@ header img {
   background-color: rgb(234, 234, 234);
   justify-content: center;
   padding-top: 5px;
-  font-family: "Roboto";
 }
 .location i {
   margin-right: 15px;
@@ -258,25 +315,18 @@ header img {
 }
 
 .introduction {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-color: #f2f2f2;
 }
 .introduction__title {
   text-align: center;
-  margin: 10px;
-  font-family: "Roboto";
+  padding-top: 20px;
   font-weight: 700;
   font-size: 24px;
-  padding: 30px 35px 0px 35px;
 }
 .introduction__text {
   font-size: 18px;
   text-align: center;
   padding: 2px;
-  font-family: "Roboto";
   font-weight: 300;
 }
 .introduction a {
@@ -288,7 +338,6 @@ header img {
   padding-left: 20px;
   margin-bottom: 15px;
   margin-top: 15px;
-  font-family: "Roboto";
   font-weight: 700;
   font-size: 24px;
 }
@@ -303,7 +352,6 @@ header img {
   .functioning__list {
     flex-direction: row;
     flex-wrap: nowrap;
-    margin-top: 0;
   }
 }
 .functioning__list__item {
@@ -322,7 +370,6 @@ header img {
   position: absolute;
   left: -8px;
   border-radius: 20px;
-  font-family: "Roboto";
   font-size: 12px;
   width: 15px;
   background-color: #9356DC;
@@ -353,7 +400,6 @@ header img {
 }
 .restaurants__title {
   padding: 40px 0px 0px 20px;
-  font-family: "Roboto";
   font-weight: 700;
   font-size: 24px;
 }
@@ -438,7 +484,7 @@ header img {
 }
 .menu h2 {
   padding: 20px 0px 20px 13px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 16px;
 }

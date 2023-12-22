@@ -23,6 +23,9 @@ header {
     i {
         margin-right: 15px;
         margin-left: -70px;
+        @media screen and (min-width: 1024px) {
+            margin-left: 0;
+        }
     }
     img {
             width: 162px;  /* Reduire taille logo */
