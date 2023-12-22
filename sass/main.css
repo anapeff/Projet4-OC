@@ -5,6 +5,11 @@
   padding: 0;
 }
 
+.container {
+  max-width: 1444px;
+  margin: 0 auto;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -12,11 +17,6 @@ a {
 
 body {
   font-family: "Roboto", sans-serif;
-}
-
-.container {
-  max-width: 1444px;
-  margin: 0, auto;
 }
 
 .button {
@@ -48,6 +48,7 @@ body {
   right: 25px;
   font-size: 25px;
   cursor: pointer;
+  z-index: 1;
 }
 .restaurants__card__infos__column2 .my-heart-full {
   transition-property: all;
@@ -82,7 +83,7 @@ body {
 }
 
 .loader-container {
-  position: absolute;
+  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -90,6 +91,7 @@ body {
   height: 100vh;
   inset: 0;
   z-index: 1;
+  pointer-events: none;
 }
 .loader-container .cook {
   animation: spin 5s ease-in-out;
@@ -275,18 +277,13 @@ header .logo {
   justify-content: center;
   align-items: center;
 }
-@media screen and (min-width: 1024px) {
-  header .logo {
-    height: 50px;
-  }
-}
 header i {
   margin-right: 15px;
   margin-left: -70px;
 }
 @media screen and (min-width: 1024px) {
   header i {
-    margin-left: 0;
+    margin-left: -600px;
   }
 }
 header img {
@@ -295,7 +292,7 @@ header img {
 }
 @media (min-width: 1024px) {
   header img {
-    width: 120px;
+    width: 140px;
   }
 }
 
@@ -358,7 +355,6 @@ header img {
   width: 100%;
   margin: 15px 45px 15px 45px;
   padding: 20px;
-  border-radius: 20px;
   display: flex;
   align-items: center;
   background-color: #f2f2f2;
@@ -393,11 +389,6 @@ header img {
   background-color: #f2f2f2;
   margin-top: 25px;
 }
-@media screen and (min-width: 1024px) {
-  .restaurants {
-    padding: 30px 180px;
-  }
-}
 .restaurants__title {
   padding: 40px 0px 0px 20px;
   font-weight: 700;
@@ -414,6 +405,7 @@ header img {
   .restaurants__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 70px;
   }
 }
 .restaurants__card {
@@ -429,6 +421,8 @@ header img {
 }
 .restaurants__card img {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .restaurants__card__infos {
   display: grid;

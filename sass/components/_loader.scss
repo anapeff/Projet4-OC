@@ -1,14 +1,13 @@
 .loader-container {
-  position: absolute;
+  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
   animation: load 600ms 3s forwards ease-in-out, spin 3s forwards ease-in-out; 
-  
   height: 100vh;
   inset: 0; //  définir top right left bottom
   z-index: 1;
-  
+  pointer-events: none; 
   
   .cook {
   animation: spin 5s ease-in-out;
@@ -16,6 +15,8 @@
   font-size: 50px;
   border-radius: 50%;
   background:linear-gradient($purple,$pink);
+ 
+  
 
   
   

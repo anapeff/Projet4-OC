@@ -5,6 +5,13 @@
     
 }
 
+.container {
+    max-width: 1444px;
+    margin: 0 auto;
+    
+  
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -13,8 +20,3 @@ body {
     font-family: $roboto-font;
 }
 
-.container {
-    max-width: 1444px;
-    margin: 0, auto;
-  
-}

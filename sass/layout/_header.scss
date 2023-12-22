@@ -13,10 +13,7 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
-        @media screen and (min-width: 1024px) {
-            height: 50px;
-        }
-     
+          
         
     }
 
@@ -24,14 +21,14 @@ header {
         margin-right: 15px;
         margin-left: -70px;
         @media screen and (min-width: 1024px) {
-            margin-left: 0;
+            margin-left: -600px;
         }
     }
     img {
             width: 162px;  /* Reduire taille logo */
             height: auto;
             @media (min-width: 1024px) {
-                width: 120px;
+                width: 140px;
             }
         }
    

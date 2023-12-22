@@ -72,10 +72,7 @@
     @media screen and (min-width:1024px) {
       flex-direction: row;
       flex-wrap: nowrap;
-     
-      
-   
-      
+    
   }
   }
 
@@ -83,7 +80,7 @@
     width: 100%;
     margin:15px 45px 15px 45px;
     padding: 20px;
-    border-radius: 20px;
+    
     display: flex;
     align-items: center;
     background-color: #f2f2f2;
@@ -130,10 +127,7 @@ i {
   box-sizing: border-box;
   background-color: #f2f2f2;
   margin-top: 25px;
-  @media screen and (min-width:1024px) {
-    padding: 30px 180px;
-  
-}
+
 
   
     &__title {
@@ -151,6 +145,7 @@ i {
     @media screen and (min-width:1024px) {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
+      gap:70px;
     
   }
    
@@ -169,12 +164,18 @@ i {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     overflow: hidden;
+   
+   
+    
 
   }
 
     &__card img {
 
-    width: 100%;
+      width: 100%;
+      object-fit: cover;
+      
+    
  
     
   }

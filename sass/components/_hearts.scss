@@ -10,6 +10,7 @@
         right: 25px;
         font-size: 25px;
         cursor: pointer;
+        z-index: 1;
 
 
     }
@@ -34,7 +35,6 @@
 
     i {
         position: absolute;
-        
         right: 25px;
         font-size: 30px;
         cursor: pointer;
