@@ -87,11 +87,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: load 600ms 3s forwards ease-in-out, spin 3s forwards ease-in-out;
+  animation: load 600ms 2s forwards ease-in-out;
   height: 100vh;
   inset: 0;
   z-index: 1;
   pointer-events: none;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 .loader-container .cook {
   animation: spin 5s ease-in-out;
@@ -175,7 +176,7 @@ body {
 }
 .menu__list__name:hover .card__click {
   background-color: #99E2D0;
-  width: 80px;
+  width: 60px;
   opacity: 1;
 }
 .menu__list__name:hover .card__click i {
@@ -183,7 +184,7 @@ body {
   transition: 0.5s ease-in-out;
 }
 .menu__list__name:hover .menu__list__name__column2 {
-  width: 80px;
+  width: 60px;
 }
 
 .card__click {
@@ -264,6 +265,8 @@ body {
 .footer__ul__link {
   color: white;
   font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
 }
 
 header nav {
@@ -420,6 +423,7 @@ header img {
   overflow: hidden;
 }
 .restaurants__card img {
+  height: 148px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
