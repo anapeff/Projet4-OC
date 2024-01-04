@@ -6,7 +6,9 @@
     height: 180px;
     object-fit: cover; 
     
-    
+    @media screen and (min-width:1200px) {
+        height: 250px;
+    }
 }
 
 
@@ -38,9 +40,13 @@
         margin: 32px 0px 20px 25px;
         font-weight: 400;
         padding-top:25px;
+        @media screen and (min-width:1200px) {
+            margin: 32px 0px 20px 120px;
+        }
 
        i {
         padding-right:12px;
+     
        }
 
 
@@ -93,6 +99,7 @@
         font-family: Roboto;
         font-weight: 700;
         font-size: 14px;
+        margin-top: 17px;
      
 
         

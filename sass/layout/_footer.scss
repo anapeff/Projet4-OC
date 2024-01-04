@@ -13,9 +13,21 @@
   }
   
   #ml3 {
+    font-family: $roboto-font;
+    font-weight: 300;
     @media screen and (min-width:1024px) {
-     padding-left: 28px;
+     padding-left: 45px;
      padding-right: 12px;
+   
+     
+  }
+
+  }
+  #c4{
+    font-family: $roboto-font;
+    font-weight: 300;
+    @media screen and (min-width:1024px) {
+ 
      
   }
 
@@ -26,7 +38,8 @@
         list-style : none;
         display: flex;
         flex-direction: column;
-        font-family: "Roboto-light";
+        font-family: $roboto-font;
+        font-weight: 500;
         padding: 0;
         gap: 8px;
         @media screen and (min-width:1024px) {
@@ -42,11 +55,10 @@
       font-family: $shrikhand-font;
       font-weight: 400;
         font-size: 18px;
-        margin: 0;
-        padding-bottom: 10px;
+        padding-bottom: 15px;
         @media screen and (min-width:1024px) {
-        padding-bottom: 0px;
-        padding-left: 45px;
+       margin-top: 25px;
+        margin-left: 65px;
       }
       
       }
@@ -64,7 +76,7 @@
 
       &__ul__link {
         color: white;
-        font-size: 18px;
+        font-size: 16px;
         font-family: $roboto-font;
         font-weight: 500;
       }
