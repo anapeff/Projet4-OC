@@ -6,17 +6,16 @@
 
     i {
         position: absolute;
-       
         right: 25px;
         font-size: 25px;
         cursor: pointer;
-        z-index: 1;
+    
 
 
     }
 
     .my-heart-full {
-        transition-property: all;
+        
         transition-duration: 500ms;
         opacity: 0;
     }
@@ -45,7 +44,6 @@
 
     .my-heart-full {
         opacity: 0;
-        transition-property: all;
         transition-duration: 500ms;
 
     }
