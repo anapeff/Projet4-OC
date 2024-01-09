@@ -11,6 +11,9 @@
      
      
   }
+  .fa-handshake-angle {
+    width: 15px;
+  }
   
   #ml3 {
     font-family: $roboto-font;
@@ -26,10 +29,13 @@
   #c4{
     font-family: $roboto-font;
     font-weight: 300;
+   
     @media screen and (min-width:1024px) {
  
      
   }
+
+
 
   }
    
@@ -79,6 +85,7 @@
         font-size: 16px;
         font-family: $roboto-font;
         font-weight: 500;
+        
       }
   
  

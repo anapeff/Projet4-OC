@@ -85,7 +85,6 @@ body {
   justify-content: center;
   align-items: center;
   animation: load 600ms 2s forwards ease-in-out;
-  height: 100vh;
   inset: 0;
   z-index: 1;
   pointer-events: none;
@@ -211,6 +210,9 @@ body {
     flex-direction: row-reverse;
     align-items: flex-end;
   }
+}
+.footer .fa-handshake-angle {
+  width: 15px;
 }
 .footer #ml3 {
   font-family: "Roboto", sans-serif;

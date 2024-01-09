@@ -4,7 +4,8 @@
   justify-content: center;
   align-items: center;
   animation: load 600ms 2s forwards ease-in-out;
-  height: 100vh; // 100% de la hauteur de la vue (viewport)
+
+  
   inset: 0; //  définir top right left bottom
   z-index: 1;
   pointer-events: none; 
